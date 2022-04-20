@@ -1,0 +1,2 @@
+将两个文件放在XXX/Binaries/Android目录下
+XXX为你的工程目录
