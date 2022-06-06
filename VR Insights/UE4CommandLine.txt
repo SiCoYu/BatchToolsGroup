@@ -1,0 +1,1 @@
+../../../ProjectX/ProjectX.uproject /Game/SCP_VR//Maps/SCP701_Main_02 -trace=log,counters,frame,cpu,gpu,memory,object -statnamedevents -tracehost=127.0.0.1 -tracefile=-tracefile=/sdcard/UE4Game/Fuck.utrace

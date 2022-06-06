@@ -1,0 +1,3 @@
+将本目录两个文件“UE4CommandLine.txt”和“EnableInsights.bat”放进ProjectX\Binaries\Android
+连接VR设备（此处以Oculus为例）
+通过bat启动并安装pak文件到Oculus
