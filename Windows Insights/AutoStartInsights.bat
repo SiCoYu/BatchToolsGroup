@@ -1,7 +1,7 @@
 taskkill /F /IM UnrealInsights.exe
 
 set InSightPath="G:\WorkTools\UE_4.26\Engine\Binaries\Win64"
-set UE4EditorPath="G:\WorkTools\UE_4.26\Engine\Binaries\Win64"
+set UE4EditorPath="G:\WorkTools\UE_4.26\Engine\Binaries\Win64\UE4Editor.exe"
 start /d %InSightPath% UnrealInsights.exe rem -tracehost=127.0.0.1 -trace=frame,cpu,gpu,memory
 
 rem 在Editor选择Stand模式，使用这种启动Insights
