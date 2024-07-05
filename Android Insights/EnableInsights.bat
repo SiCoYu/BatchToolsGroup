@@ -1,8 +1,9 @@
 echo %cd%
 @echo off
-set DefaultAppName=WaltUE
-set DefaultPackageName=com.h3d.walt
-set DefaultInSightPath=D:\WP_YXK\UE\UE_5.3\Engine\Binaries\Win64
+set DefaultAppName=M2
+set DefaultPackageName=com.h3d.m2
+set DefaultInSightPath="F:\UE5\UE_Src\UE_5.3_T3\Engine\Binaries\Win64"
+
 set AppName=%DefaultAppName%
 set PackName=%DefaultPackageName%
 set InSightPath=%DefaultInSightPath%
@@ -41,15 +42,15 @@ echo %InSightPath%
 
 set TxtPath=%cd%\UE4CommandLine.txt
 
-start /d %InSightPath% UnrealInsights.exe
+rem start /d %InSightPath% UnrealInsights.exe
 
-adb.exe reverse tcp:5037 tcp:5037
+adb.exe reverse tcp:1980 tcp:1980
 
-rem adb push %TxtPath% /mnt/sdcard/UE4Game/%AppName%/UE4CommandLine.txt
+rem adb push %TxtPath% /mnt/sdcard/UnrealGame/%AppName%/UE4CommandLine.txt
 
 rem adb shell setprop debug.unreal.commandline -tracehost=127.0.01
 
 rem adb shell am start -n %PackName%/com.epicgames.ue4.SplashActivity -tracehost=127.0.0.1 -trace=frame,cpu,gpu,memory
-adb shell am start -n %PackName%/com.epicgames.unreal.SplashActivity -tracehost=127.0.0.1 -trace=frame,cpu,gpu,memory
+adb shell am start -n %PackName%/com.epicgames.unreal.SplashActivity -tracehost=192.168.128.18 -trace=frame,cpu,gpu,memory
 
 pause
