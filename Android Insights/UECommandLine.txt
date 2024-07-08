@@ -1,1 +1,1 @@
--tracehost=192.168.128.18 -trace=default,memory -statnamedevents -ExecCmds="stat fps, stat unit"
+-tracehost=192.168.128.123 -trace=default,memory -statnamedevents -ExecCmds="stat fps, stat unit, stat llmfull"
