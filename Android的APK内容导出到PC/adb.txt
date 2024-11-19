@@ -1,0 +1,7 @@
+Step1：
+adb shell pm path com.xxx.xxx，获取APK包路径。例如，adb shell pm path com.H3D.PakDemo
+
+Step2：
+adb pull Step1输出的包名 PC的目录，例如，adb pull /data/app/~~1rK6xl1aIH8OQeSlNFLvxw==/com.H3D.PakDemo-4daXm9CL_zg7ZM_mviWq9A==/base.apk D:\WP_YXK\UE5_WP\Pak_Demo\Pak\Android_ASTC\
+
+最终，打开D:\WP_YXK\UE5_WP\Pak_Demo\Pak\Android_ASTC\，即可找到导出来的base.apk。
