@@ -1,6 +1,8 @@
 echo %cd%
 @echo off
 set DefaultAppName=M2_Client
+set DefaultAppName=M2_Client
+set DefaultPackageName=com.h3d.m2
 set DefaultPackageName=com.h3d.m2
 set DefaultInSightPath="F:\UE5\UE_Src\UE_5.3_T3\Engine\Binaries\Win64"
 
@@ -43,3 +45,5 @@ echo %InSightPath%
 adb.exe reverse tcp:1980 tcp:1980
 
 adb push UECommandLine.txt storage/emulated/0/Android/data/%PackName%/files/UnrealGame/%AppName%/
+
+pause

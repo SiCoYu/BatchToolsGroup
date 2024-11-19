@@ -2,7 +2,7 @@ echo %cd%
 @echo off
 set DefaultAppName=M2_Client
 set DefaultPackageName=com.h3d.m2
-set DefaultInSightPath="F:\UE5\UE_Src\UE_5.3_T3\Engine\Binaries\Win64"
+set DefaultInSightPath="D:\WP_YXK\UE\UE_5.4\Engine\Binaries\Win64"
 
 set AppName=%DefaultAppName%
 set PackName=%DefaultPackageName%
@@ -51,6 +51,6 @@ adb push UECommandLine.txt storage/emulated/0/Android/data/%PackName%/files/Unre
 rem adb shell setprop debug.unreal.commandline -tracehost=127.0.01
 
 rem adb shell am start -n %PackName%/com.epicgames.ue4.SplashActivity -tracehost=127.0.0.1 -trace=frame,cpu,gpu,memory
-adb shell am start -n %PackName%/com.epicgames.unreal.SplashActivity -tracehost=192.168.128.18 -trace=default,memory
+adb shell am start -n %PackName%/com.epicgames.unreal.SplashActivity -tracehost=192.168.112.49 -trace=default,memory
 
 pause
